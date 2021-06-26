@@ -1,28 +1,53 @@
 <html>
-    <head>
-        <title>List</title>
-    </head>
-    <body>
-        <h3>Types of list in HTML</h3>
-        This is ordered list:
-        <ol type="1">
-            <li>unordered list</li>
-            <li>ordered list</li>
-            <li>description list</li>
-        </ol>
-        This is unordered list:
-        <ul>
-            <li>hello</li>
-            <li>how r u doing?</li>
-            <li>i hope u r doing great.</li>
-        </ul>
-        
-        This is description list:
-        <dl>
-            <dt>About writing lab report:</dt>
-            <dd>brief intro abt the topic</dd>
-            <dd>the code should be handwtitten</dd>
-            <dd>output should be printed</dd>
-        </ul>
-    </body>
+<head>
+     <title>page layout</title>
+     <style>
+         header{
+            border: 5px solid blue;
+             text-align: center;
+             height: 10%;
+         }
+         #below{
+            text-align: center;
+             border: 4px solid pink;
+             height: 10%;
+         }
+         footer{
+            text-align: center;
+             border:5px solid blueviolet;
+         }
+         section{
+            height: 50%;
+         }
+         .container{
+             display: inline-flex;
+             height: 98%;
+             width: 32%;
+             align-items:center;
+        }
+     </style>
+</head>
+<body>
+    <header>
+        Header 
+    </header>
+    <div id="below">
+        Below header
+    </div>
+    <section>
+        <div class="container" style="border: 3px solid black;">
+            <div >left side</div>
+        </div>
+        <div class="container" style="border: 3px solid red;">
+            middle portion
+        </div>
+        <div class="container" style="border: 3px solid green;">
+            right side
+        </div>
+    </section>
+    <footer>
+        Pratistha, copyright &copy; 2021
+    </footer>
+    
+</body>
 </html>
