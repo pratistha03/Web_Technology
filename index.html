@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration</title>
+        <style>
+            body{
+                background-color:lightgrey;
+            }
+            label{
+                font-weight: bold ;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <h2>Registration Form</h2>
+        <fieldset>
+            <legend>Fill your details here</legend> 
+            <table>
+                <tr>
+                    <td><label>Full name:</label></td>
+                    <td><input type="text" name="fullname"></td>
+                </tr>
+            
+                <tr>
+                    <td><label>Email:</label></td>
+                    <td><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td><label>Phone number:</label></td>
+                    <td><input type="number" name="ph_number"></td>
+                </tr>
+                
+    
+                <tr>
+                    <td><label> city:</label></td>
+                    <td>
+                        <select name="city">
+                            <option value="ktm">Kathmandu</option>
+                            <option value="bkt">Bhaktapur</option>
+                            <option value="pokhara">pokhara</option>
+                        </select>
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td> <label>Gender</label></td>
+                    <td> <input type="radio"  id="male" name="gender" value ="m"> Male 
+                     <input type="radio" id="female" name="gender" value ="f">Female</td> 
+                </tr>
+                <tr>
+                    <td><label>Interest</label></td>
+                    <td>
+                        <input type="checkbox" name= "interest[]" value="reading"/> reading
+                        <input type="checkbox" name= "interest[]" value="code"/> codeing
+                        <input type="checkbox" name= "interest[]" value="sports"/> sports
+                        <input type="checkbox" name= "interest[]" value="all"/> All
+                    </td>
+                </tr>
+    
+                <tr>
+                    <td><label>Documents</label></td>
+                    <td>
+                        <select size="3" multiple="multiple"><!--scroll bar-->
+                        <option>SLC</option>
+                        <option>12</option>
+                        <option>Bachelor</option>
+                        <option>Masters</option>
+                        <option>PhD</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label>Tell us something about you</label></td>
+                    <td>
+                        <textarea cols="45" rows="5" name="abtU">
+    
+                        </textarea>
+                    </td>
+    
+                </tr>
+                <tr>
+                    <td><label>Profile picture</label></td>
+                    <td>
+                        <input type="file" name="profile_pic"/>
+                    </td>
+                </tr>
+                   
+                <tr>   
+                    <td><button type="submit" name="formsubmit">Submit</button> <button type="reset" name="formrest">Reset</button> </td>
+                </tr>
+            </table>          
+        </fieldset>
+        <fieldset>
+            <legend>login information</legend>
+
+            <table>
+                <tr>
+                    <td>
+            <label>Username</label></td>
+            <td>
+            <input type="text" name="username"/></td></tr>
+            <tr>
+            <td><label>Password:</label></td>
+            <td><input type="password" name="password"/>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </body>
+</html>
+<!-- to pass the values-->
+<!--<form action="processregistrarion" method= "GET" or "POST" enctype="multipart/form-data"></form><!-- POST is prefered interms of security-->
+
